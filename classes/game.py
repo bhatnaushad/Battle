@@ -26,7 +26,7 @@ class Person:
         self.hp = hp
         self.maxmp = mp
         self.mp = mp
-        self.atkl = atk - 10
+        self.atkl = atk - 10    # -10 to subtrack from atk passed
         self.atkh = atk + 10    # attack high
         self.df = df
         self.magic = magic    # for dictionary of magic spells
@@ -34,5 +34,6 @@ class Person:
 
     def generate_damage(self):
         return random.randrange(self.atkl, self.atkh)
+
 
     
